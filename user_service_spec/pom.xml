@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>twitter.clone</groupId>
-	<artifactId>tweet_service_spec</artifactId>
+	<artifactId>user_service_spec</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>tweet_service_spec</name>
-	<description>Tweet Service for twitter clone application</description>
+	<name>user_service_spec</name>
+	<description>User Service for twitter clone application</description>
 	<packaging>jar</packaging>
 	<properties>
 		<java.version>11</java.version>

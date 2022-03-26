@@ -10,16 +10,16 @@
 	</parent>
 	<packaging>pom</packaging>
 	<groupId>twitter.clone</groupId>
-	<artifactId>tweet_service</artifactId>
+	<artifactId>user_service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>tweet_service</name>
-	<description>Tweet Service for twitter clone application</description>
+	<name>user_service</name>
+	<description>User service for twitter clone application</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<modules>
-		<module>tweet_service_app</module>
-		<module>tweet_service_spec</module>
+		<module>user_service_app</module>
+		<module>user_service_spec</module>
 	</modules>
 
 </project>
