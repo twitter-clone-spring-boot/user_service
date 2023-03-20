@@ -117,8 +117,8 @@
 						<configuration>
 							<inputSpec>${project.basedir}/src/main/resources/openapi.yml</inputSpec>
 							<generatorName>spring</generatorName>
-							<apiPackage>twitter.clone.tweet_service_spec.api</apiPackage>
-							<modelPackage>twitter.clone.tweet_service_spec.model</modelPackage>
+							<apiPackage>twitter.clone.user_service_spec.api</apiPackage>
+							<modelPackage>twitter.clone.user_service_spec.model</modelPackage>
 							<supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
 						</configuration>
 					</execution>

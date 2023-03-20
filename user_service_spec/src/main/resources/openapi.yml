@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
-  title: Tweet_Service
-  description: "API related to tweets in twitter clone"
+  title: User_Service
+  description: "API related to users in twitter clone"
   contact:
     email: sanchitbansal10@gmail.com
   license:
@@ -9,25 +9,24 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 0.0.1-SNAPSHOT
 externalDocs:
-  description: Find out more about Reflectoring
   url: https://sanchitbansal.com
 tags:
-  - name: tweet
-    description: Operations about tweet
+  - name: user
+    description: Operations about user
 paths:
-  /tweet/post:
+  /user/create_user:
     post:
       tags:
-        - tweet
-      summary: Post tweet
-      description: Post tweet functionality
-      operationId: postTweet
+        - user
+      summary: Create a User
+      description: Create a User functionality
+      operationId: createUser
       requestBody:
-        description: Created Tweet object
+        description: Created User
         content:
           '*/*':
             schema:
-              $ref: '#/components/schemas/Tweet'
+              $ref: '#/components/schemas/User'
         required: true
       responses:
         default:
@@ -35,44 +34,52 @@ paths:
           content: {}
       x-codegen-request-body-name: body
 
-  /tweet/{tweetId}:
+  /user/{id}:
     get:
-      summary: Get a tweet by ID
+      summary: Get a user by ID
       parameters:
         - in: path
-          name: tweetId
+          name: id
           schema:
             type: integer
           required: true
-          description: Numeric ID of the tweet to get
+          description: Numeric ID of the user to get
       responses:
         '200':
           description: successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Tweet'
+                $ref: '#/components/schemas/User'
         '404':
-          description: tweet not found
+          description: User not found
           content: {}
 components:
   schemas:
-    Tweet:
+    User:
       type: object
       properties:
         id:
           type: integer
           format: int64
-        content:
+        username:
           type: string
-        user_id:
+        email:
           type: string
-        total_likes:
+        password:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        bio:
+          type: string
+        profile_picture:
+          type: string
+        created_at:
           type: integer
-          format: int64
-        total_comments:
+        updated_at:
           type: integer
-          format: int64
   securitySchemes:
     reflectoring_auth:
       type: oauth2

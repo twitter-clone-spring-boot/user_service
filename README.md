@@ -7,5 +7,5 @@ Build spec and app:
 
 Run the app:
 
-    cd tweet_service_app
+    cd user_service_app
     mvn spring-boot:run
