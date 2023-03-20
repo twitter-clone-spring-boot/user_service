@@ -1,10 +1,10 @@
-package twitter.clone.tweet_service_app;
+package twitter.clone.user_service_app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TweetServiceAppApplicationTests {
+class UserServiceAppApplicationTests {
 
 	@Test
 	void contextLoads() {
